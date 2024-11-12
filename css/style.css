@@ -1,0 +1,40 @@
+main {
+    min-height: calc(100vh - 160px);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Define una altura fija para todas las tarjetas */
+    overflow: hidden; /* Oculta el contenido que exceda el tamaño */
+}
+
+.card-img-top {
+    height: 200px; /* Ajusta el tamaño de la imagen */
+    object-fit: cover; /* Para mantener el contenido visible en el tamaño establecido */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    overflow: hidden; /* Para asegurarse de que el contenido extra no salga del contenedor */
+}
+
+.card-text {
+    max-height: 100px; /* Altura máxima de la descripción */
+    overflow-y: auto; /* Habilita la barra de desplazamiento si el contenido es mayor */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-footer {
+    font-size: 0.875rem;
+    color: #6c757d;
+    text-align: right;
+    padding-top: 1rem;
+}
